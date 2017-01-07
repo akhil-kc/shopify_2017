@@ -1,0 +1,19 @@
+
+<p>
+  <strong>Order ID:</strong>
+  <%= @order.orderid %>
+</p>
+ 
+<p>
+  <strong>Item Name:</strong>
+  <%= @order.item_name%>
+</p>
+<p>
+  <strong>Total Price:</strong>
+  <%= @order.total_price %>
+</p>
+<p>
+  <strong>Total Tax:</strong>
+  <%= @order.total_tax%>
+</p>
+<%= link_to 'Back', orders_path %>

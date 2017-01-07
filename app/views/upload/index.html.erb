@@ -1,0 +1,11 @@
+<h1>Upload#index</h1>
+<%=form_for :upload, url: url_for( :controller => :upload, :action => :calculate) do |f| %>
+<%=form_for :upload, url: url_for( :controller => :upload, :action => :calculate) do |f| %>
+    <div class="field">
+      <%= f.label :link %><br />
+      <%= f.text_field :link %>
+    </div> 
+
+  <div class="actions">
+    <%= f.submit %>
+<% end %>

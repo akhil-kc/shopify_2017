@@ -1,0 +1,23 @@
+<h1>Listing orders</h1>
+ 
+<table>
+  <tr>
+    <th>Order Id</th>
+    <th>Item Name</th>
+    <th>Total Price</th>
+    <th>Total Tax</th>
+  </tr>
+ 
+  <% @orders.each do |order| %>
+    <tr>
+      <td><%= order.orderid%></td>
+      <td><%= order.item_name%></td>
+      <td><%= order.total_price%></td>
+      <td><%= order.total_tax%></td>
+      <td><%= link_to 'Show', order_path(order) %></td>
+    </tr>
+  <% end %>
+</table>
+
+<%= link_to 'New article', new_order_path %>
+<%= link_to "Upload",:action=>"update", :controller=>"orders"%>

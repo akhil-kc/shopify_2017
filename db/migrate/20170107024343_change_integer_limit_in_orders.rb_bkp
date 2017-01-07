@@ -1,0 +1,5 @@
+class ChangeIntegerLimitInOrders < ActiveRecord::Migration[5.0]
+  def change
+	change_column :orders, :orderid, :integer, limit: 15
+  end
+end
